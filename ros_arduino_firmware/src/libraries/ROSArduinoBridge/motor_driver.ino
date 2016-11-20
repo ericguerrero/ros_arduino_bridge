@@ -9,12 +9,12 @@
 
 #ifdef USE_BASE
    
-#ifdef POLOLU_VNH5019
+#if defined POLOLU_VNH2SP30
   /* Include the Pololu library */
-  #include "DualVNH5019MotorShield.h"
+  #include "DualVNH2SP30.h"
 
   /* Create the motor driver object */
-  DualVNH5019MotorShield drive;
+  DualVNH2SP30 drive;
   
   /* Wrap the motor driver initialization */
   void initMotorController() {
